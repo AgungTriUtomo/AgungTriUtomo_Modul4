@@ -35,10 +35,6 @@ Penelusuran dilakukan dengan pointer bantu yang bergerak dari `First` sampai `Ni
 #include <iostream>
 using namespace std;
 
-// I.S = Initial State / kondisi awal
-// F.S = Final State / kondisi akhir
-
-// fungsi untuk cek apakah list kosong atau tidak
 bool isEmpty(linkedList List) {
     if(List.first == Nil){
         return true;
@@ -47,14 +43,12 @@ bool isEmpty(linkedList List) {
     }
 }
 
-// pembuatan linked list kosong
 void createList(linkedList &List) {
     /* I.S. sembarang
        F.S. terbentuk list kosong */
     List.first = Nil;
 }
 
-// pembuatan node baru dengan menerapkan manajemen memori
 address alokasi(string nama, string nim, int umur) {
     /* I.S. sembarang
        F.S. mengembalikan alamat node baru dengan isidata = sesuai parameter dan next = Nil */
@@ -66,7 +60,6 @@ address alokasi(string nama, string nim, int umur) {
     return nodeBaru;
 }
 
-// penghapusan node dengan menerapkan manajemen memori
 void dealokasi(address &node) {
     /* I.S. P terdefinisi
        F.S. memori yang digunakan node dikembalikan ke sistem */
@@ -74,7 +67,7 @@ void dealokasi(address &node) {
     delete node;
 }
 
-// prosedur-prosedur untuk insert / menambahkan node baru kedalam list
+
 void insertFirst(linkedList &List, address nodeBaru) {
     /* I.S. sembarang, P sudah dialokasikan
        F.S. menempatkan elemen list (node) pada awal list */
@@ -107,7 +100,6 @@ void insertLast(linkedList &List, address nodeBaru) {
     }
 }
 
-// prosedur-prosedur untuk delete / menghapus node yang ada didalam list
 void delFirst(linkedList &List){
     /* I.S. list tidak kosong
        F.S. node pertama di list terhapus*/
@@ -189,7 +181,6 @@ int nbList(linkedList List) {
     return count;
 }
 
-// prosedur untuk menghapus list (menghapus semua node didalam list)
 void deleteList(linkedList &List){
     /* I.S. list sudah ada
        F.S. menghapus semua node didalam list*/
@@ -213,27 +204,24 @@ Program tersebut menerapkan struktur data Singly Linked List untuk mengelola dat
 #include <iostream>
 using namespace std;
 
-// deklarasi isi data struct mahasiswa
 struct mahasiswa {
     string nama;
     string nim;
     int umur;
 };
 
-typedef mahasiswa dataMahasiswa; // memberikan nama alias dataMahasiswa untuk struct mahasiswa
+typedef mahasiswa dataMahasiswa; 
 
-typedef struct node *address; // mendefinisikan alias address sebagai pointer ke struct node
-
-struct node { // node untuk isi dari linked list
+typedef struct node *address; 
+struct node { 
     dataMahasiswa isidata;
     address next;
 };
 
-struct linkedList { // ini linked listnya
+struct linkedList { 
     address first;
 };
 
-// semua function & procedure yang akan dipakai
 bool isEmpty(linkedList list);
 void createList(linkedList &list);
 address alokasi(string nama, string nim, int umur);
