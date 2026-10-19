@@ -30,11 +30,7 @@ Menyisipkan node baru di awal list. Node baru menunjuk ke node yang sebelumnya a
 Penelusuran dilakukan dengan pointer bantu yang bergerak dari `First` sampai `Nil`. Cara ini dipakai oleh `printInfo` (menampilkan isi), `nbList` (menghitung jumlah node), dan `deleteList` (menghapus seluruh node satu per satu).
 
 ## Guided
-## 1 List.cpp
 
-## 2 List.h
-
-## 3 Main.cpp
 
 
 ## Unguided
