@@ -140,7 +140,7 @@ Program ini membuat ADT singly linked list yang dipisah menjadi tiga file. `Sing
 
 ### 2. Penghapusan node dengan `deleteFirst()`, `deleteLast()`, `deleteAfter()`, serta `nbList()` dan `deleteList()`
 
-Tambahkan deklarasi berikut pada **Singlylist.h** (sebelum `#endif`):
+
 ```C++
 void deleteFirst(List &L, address &P);
 void deleteLast(List &L, address &P);
@@ -149,7 +149,7 @@ int nbList(List L);
 void deleteList(List &L);
 ```
 
-Tambahkan implementasi berikut pada **Singlylist.cpp**:
+
 ```C++
 void deleteFirst(List &L, address &P) {
     if (L.First != Nil) {
@@ -226,13 +226,13 @@ int main() {
     insertFirst(L, P5);
     // List: 9 12 8 0 2
 
-    deleteFirst(L, P);          // hapus node 9
+    deleteFirst(L, P);          
     dealokasi(P);
 
-    deleteLast(L, P);           // hapus node 2
+    deleteLast(L, P);           
     dealokasi(P);
 
-    deleteAfter(L.First, P);    // hapus node 8 (setelah node 12)
+    deleteAfter(L.First, P);    
     dealokasi(P);
 
     printInfo(L);
