@@ -258,3 +258,5 @@ Singly linked list adalah struktur data dinamis yang tiap node-nya menyimpan dat
 ## Referensi
 [1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
 <br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
+[3] PENS, "Praktikum 15-16: Single linked list," Politeknik Elektronika Negeri Surabaya. Available: https://arna.lecturer.pens.ac.id/PrakASD_Java/Praktikum%2015-16%20-%20SingleLinkedList.pdf
+[4] M. T. Ahmmed, "Introduction to linked list data structures with its applications: Singly and circular linked list," ResearchGate, Oct. 2024. Available: https://www.researchgate.net/publication/385423187_Introduction_to_Linked_List_Data_Structures_with_it's_applications_Singly_and_Circular_Linked_List
