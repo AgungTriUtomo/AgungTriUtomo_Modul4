@@ -134,7 +134,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/AgungTriUtomo/109082500048_AgungTriUtomo_Modul4/blob/main/Output/Outputsoal1.png)
+![Screenshot Output Unguided 1_1](Output/Outputsoal1.png)
 
 Program ini membuat ADT singly linked list yang dipisah menjadi tiga file. `Singlylist.h` berisi deklarasi tipe (`infotype`, `address`, `ElmList`, `List`) beserta prototipe prosedur. `Singlylist.cpp` berisi implementasinya: `createList` mengosongkan list dengan mengisi `First` dengan `Nil`, `alokasi` membuat node baru dengan `new` lalu mengisi `info` dan `next`, `dealokasi` melepas memori node dengan `delete`, `printInfo` menelusuri list dari `First` sampai `Nil` sambil mencetak `info`, dan `insertFirst` menyisipkan node di awal list. Pada `main.cpp`, lima node (2, 0, 8, 12, 9) disisipkan satu per satu menggunakan `insertFirst`. Karena setiap node baru selalu menjadi node pertama, urutan dalam list menjadi kebalikan dari urutan penyisipan, sehingga output yang tampil adalah `9 12 8 0 2`.
 
@@ -248,7 +248,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/AgungTriUtomo/109082500048_AgungTriUtomo_Modul4/blob/main/Output/Outputsoal1.png)
+![Screenshot Output Unguided 2_1](Output/Outputsoal2.png)
 
 Pada soal kedua, list dari soal pertama (`9 12 8 0 2`) dimodifikasi dengan operasi penghapusan. `deleteFirst` menghapus node 9 sehingga list menjadi `12 8 0 2`. `deleteLast` menelusuri list sampai node sebelum terakhir lalu memutus node 2, sehingga list menjadi `12 8 0`. `deleteAfter(L.First, P)` menghapus node yang berada setelah node 12, yaitu node 8, dengan menyambungkan `next` node 12 langsung ke node 0, sehingga list menjadi `12 0`. Fungsi `nbList` menghitung node dengan traversal dan menghasilkan 2. Terakhir, `deleteList` menghapus seluruh node secara berulang menggunakan `deleteFirst` dan `dealokasi` sampai `First` bernilai `Nil`, lalu mencetak pesan berhasil, sehingga `nbList` berikutnya menghasilkan 0. Setiap node yang dilepas dari list juga didealokasi agar memori tidak bocor.
 
