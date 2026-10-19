@@ -248,7 +248,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/AgungTriUtomo/109082500048_AgungTriUtomo_Modul4/blob/main/Output/Outputsoal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/AgungTriUtomo/109082500048_AgungTriUtomo_Modul4/blob/main/Output/Outputsoal1.png)
 
 Pada soal kedua, list dari soal pertama (`9 12 8 0 2`) dimodifikasi dengan operasi penghapusan. `deleteFirst` menghapus node 9 sehingga list menjadi `12 8 0 2`. `deleteLast` menelusuri list sampai node sebelum terakhir lalu memutus node 2, sehingga list menjadi `12 8 0`. `deleteAfter(L.First, P)` menghapus node yang berada setelah node 12, yaitu node 8, dengan menyambungkan `next` node 12 langsung ke node 0, sehingga list menjadi `12 0`. Fungsi `nbList` menghitung node dengan traversal dan menghasilkan 2. Terakhir, `deleteList` menghapus seluruh node secara berulang menggunakan `deleteFirst` dan `dealokasi` sampai `First` bernilai `Nil`, lalu mencetak pesan berhasil, sehingga `nbList` berikutnya menghasilkan 0. Setiap node yang dilepas dari list juga didealokasi agar memori tidak bocor.
 
